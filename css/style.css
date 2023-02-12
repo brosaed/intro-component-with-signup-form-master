@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --primary-red:hsl(0, 100%, 74%);
+    --secondary-green:hsl(154, 59%, 51%);
+    --blue:hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+ 
+ 
+
+body {
+    
+    background-color: var(--primary-red);
+    background-image: url(../images/bg-intro-desktop.png);
+    background-position: center center;
+    font-size: 16px;
+    
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+    width: 100%;
+    max-width: 1240px;
+    min-height:100vh;
+    
+}
+
+.wrapper-left {
+    width: 47%;
+    padding: 2rem;
+    color: #fff;
+}
+
+.wrapper-signup {
+    width:45%;
+    
+}
+
+.form {
+  max-width: 100%;
+  padding: 45px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  box-shadow:0 8px 10px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+
+}
+
+input {
+    padding: 17px 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Dark-Blue);
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 8px;
+    flex-basis: 100%;
+
+}
+
+.wrapper-left h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.wrapper-left p {
+    font-size:16px;
+    font-weight: 400;
+    opacity: 0.9;    
+    line-height: 25px;
+}
+
+.form-label {
+    background-color: var(--blue);
+    padding: 1.3rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.4),0 7px 10px 0 rgba(0,0,0,.19);
+    margin-bottom: 20px;
+}
+
+
+.form-label  span {
+   
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    
+}
+
+.btn{
+    background-color: var(--secondary-green);
+    height: 60px;   
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #fff;
+    margin-bottom: 10px;    
+    
+} 
+
+input:focus {
+    outline: none !important;
+    border: 1px solid var(--Dark-Blue);
+}
+
+.terms {
+    font-size:11px;
+    font-weight: 600;
+    color: var(--Grayish-Blue);
+    text-align: center;
+}
+
+.terms span {
+    color:var(--primary-red);
+    font-weight: 800;
+}
+
+
+.fa-sharp {
+  font-size: 20px;   
+  color  :var(--primary-red);
+  margin-left: -40px;
+  margin-top: 15px;
+  visibility: hidden;
+}
+
+
+.input-group {
+    position: relative;
+    display: flex;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+.input-holder {
+    flex-basis: 100%;
+}
+
+.error {
+    border: 2px solid var(--primary-red);
+    background: url(../images/icon-error.svg) no-repeat;
+    background-position: 97%;
+}
+.success {
+    border: 2px solid var(--secondary-green);
+}
+.input-group span {
+    font-size: .8em;
+    color: var(--primary-red);
+    width: 100%;
+    text-align: right;
+}
+/* Responsive screen  */
+
+/* Portrait */
+/* and (min-width: 375px) */
+@media only screen and (max-width: 992px) { 
+
+    .container { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .wrapper-left {
+        width: 100%;
+        padding: 40px 0px 60px;
+    }
+
+    .wrapper-signup {
+        width:100%;
+        
+    }
+
+    .wrapper-left h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+
+    .wrapper-left p {
+        font-size:16px;
+        text-align: center;
+    }
+
+    .form-label {
+        padding: 15px 60px;
+       
+    }
+
+
+}
